@@ -1,0 +1,32 @@
+{
+  "name": "danielpuent3/laravel-repository",
+  "description": "Used to abstract the data layer",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Puente",
+      "email": "danny@musicbed.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Dp\\Repository\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dp\\Repository\\Providers\\LaravelRepositoryServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.1.3",
+    "illuminate/support": "~5.0",
+    "illuminate/http": "~5.0",
+    "illuminate/database": "~5.0",
+    "illuminate/pagination": "~5.0"
+  }
+}
